@@ -15,6 +15,10 @@ gem 'nokogiri', require: false
 gem 'bcrypt', '~> 3.1.11'
 gem 'jwt'
 
+# front-end stuff in general -> vue.js
+gem 'webpacker'
+gem 'foreman'
+
 group :development, :test do
   gem 'database_cleaner'
   gem 'factory_girl_rails'
@@ -25,7 +29,7 @@ group :development, :test do
 end
 
 group :test do
-  gem 'codeclimate-test-reporter', '~> 1.0.0'
+  # gem 'codeclimate-test-reporter', '~> 1.0.0'
   gem 'simplecov'
 end
 
@@ -34,4 +38,4 @@ group :development do
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
-gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+# gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
